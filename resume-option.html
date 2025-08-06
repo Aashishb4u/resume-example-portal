@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <section class="min-h-screen bg-[#f6f7ff] flex flex-col items-center justify-center px-4 py-16 text-center">
+        <!-- Heading -->
+        <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight text-center">
+            How do you want to <span class="text-[#1688FE]">build <br>your resume?</span><br />
+        </h1>
+
+        <!-- Resume Options -->
+        <div class="flex flex-col md:flex-row gap-8 max-w-2xl w-full justify-center">
+            <!-- Create New Resume -->
+            <button onclick="window.location.href='./create-resume.html';"
+                class="flex-1 bg-white hover:bg-[#eaf3ff] border border-blue-500 rounded-md p-6 hover:shadow-lg transition cursor-pointer">
+                <div class="flex justify-center mb-4">
+                    <img src="https://img.icons8.com/fluency/96/resume.png" alt="New Resume" class="w-16 h-16" />
+                </div>
+                <h3 class="text-lg md:text-2xl font-semibold text-gray-900 mb-2">Create a new resume</h3>
+                <p class="text-base font-semibold text-gray-600">We will help you create a resume step-by-step</p>
+            </button>
+
+            <!-- Upload Existing Resume -->
+            <button onclick="window.location.href='./upload-resume.html';"
+                class="flex-1 bg-white hover:bg-[#eaf3ff] border border-blue-500 rounded-md p-6 hover:shadow-lg transition cursor-pointer">
+                <div class="flex justify-center mb-4">
+                    <img src="https://img.icons8.com/fluency/96/add-file.png" alt="Upload Resume" class="w-16 h-16" />
+                </div>
+                <h3 class="text-lg md:text-2xl font-semibold text-gray-900 mb-2">I already have a resume</h3>
+                <p class="text-base font-semibold text-gray-600">
+                    We’ll re-format it and fill in your information so you don’t have to.
+                </p>
+            </button>
+        </div>
+
+        <!-- Terms & Privacy -->
+        <p class="text-base font-semibold text-gray-600 mt-8 max-w-2xl">
+            By selecting an option, you will begin creating your AI-generated resume and agree to our
+            <a href="#" class="text-blue-600 underline">Terms & Conditions</a> and
+            <a href="#" class="text-blue-600 underline">Privacy Policy</a>.
+        </p>
+    </section>
+
+</body>
+
+</html>
